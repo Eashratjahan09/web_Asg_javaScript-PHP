@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1:<input type="text" id="sir1" >
+    <input type="submit" id="btn" onclick="alert('hello from inside');">
+
+    <br>
+    2:<input type="text" id="sir2" >
+    <input type="submit" id="btn" onclick="karim();">
+   
+
+   <br>
+    3:<input type="text" id="txn" >
+    <!-- click korle kaj korbe setake inline kora using function -->
+    <input type="submit" id="btn" onclick="rahim()">
+    <br>
+
+    4:<input type="text" id="txn1" >
+    <!-- click korle kaj korbe setake inline kora using function -->
+    <input type="submit" id="btn" onclick="rahimr()">
+   <br>
+   <hr>
+    <label id="lbl" style="color: red;"></label>
+
+    <!-- sum of 2 number -->
+    <!-- Num1: <input type="number" id="k1" >
+    Num2:<input type="number" id="k2" >
+    <input type="submit" id="btn"  value="+" onclick="task()">
+   <br>
+   <hr>
+    <label id="lb" style="color: red;"></label>
+    <br> -->
+
+    <!-- hover -->
+    Num1: <input type="number" id="k1" >
+    Num2:<input type="number" id="k2" >
+    <input type="submit" id="btnx"  value="+" onmouseover="task()">
+   <br>
+   <hr>
+    <label id="lb" style="color: red;"></label>
+
+<br>
+
+    <!-- button nai, label hidden -->
+
+    Num1: <input type="number" id="kp1" >
+
+    Num2:<input type="number" id="kp2" >
+   
+   <br>
+   <hr>
+   Result: <label id="result" style="color: red;"></label>
+   <br>
+   <br>
+   <hr>
+
+
+   <!-- another way -->
+
+Num1: <input type="number" id="kpt1" onkeyup="alert('done');calculate()" > <br>
+
+Num2:<input type="number" id="kpt2" onkeyup="calculate()">
+
+<br>
+<hr>
+Result: <label id="result2" style="color: red;"></label>
+<br>
+<hr>
+
+<!-- chepe dhore rakha onkeydown
+key chere deya onkeyup -->
+
+Num1: <input type="number" id="kpt1" onkeyup="alert('hello world')" >
+
+<hr>
+
+<!-- sum sub mul div using only one function-->
+
+Num1: <input type="number" id="um1" ><br>
+
+Num2:<input type="number" id="um2" ><br>
+<input type="submit" id="btn1"  value="+" onclick="Do('sum')">
+<input type="submit" id="btn2"  value="-" onclick="Do('sub')">
+<input type="submit" id="btn3"  value="*" onclick="Do('mul')">
+<input type="submit" id="btn4"  value="/" onclick="Do('div')">
+<br>
+<hr>
+<label id="l" style="color: red;"></label>
+<br>
+<hr>
+
+<!-- another way: -->
+
+Num1: <input type="number" id="umm1" ><br>
+
+Num2:<input type="number" id="umm2" ><br>
+<input type="submit" id="btn1"  value="+" onclick="DD('+')">
+<input type="submit" id="btn2"  value="-" onclick="DD('-')">
+<input type="submit" id="btn3"  value="*" onclick="DD('*')">
+<input type="submit" id="btn4"  value="/" onclick="DD('/')">
+<br>
+<hr>
+<label id="lm" style="color: red;"></label>
+<br>
+<hr>
+
+<!-- Another task 
+    each apple=12.50tk
+    1-9 ta apple kinle ---no discount
+    10-19 ta apple kinle-------------5%
+    20-49 apple kinle-----------------10%
+    50=> apple kinle---------------15%
+    accoding this calculate the cost variable "t"
+    ----------------------------
+    delivery:
+    yes=40.0
+    no=0.0
+    add delivery charge directly with "t" as per input 
+    -----------------------------
+    tip=direct add korbe with total amount(t)
+    -----------------------------
+    location(inside dhaka)=20% tax dite hobe over recently calculated cost (t)
+    (outside dhaka)=10% tax tax dite hobe over recently calculated cost (t)
+   
+    p
+    g
+    h
+    j
+    k
+
+
+-->
+
+Enter the num of apple:<input type="text" id="a1" ><br>
+Home Delivery:<input type="radio"  name="r" value="yes">yes
+             <input type="radio" name="r" value="No">No<br>
+Tip:         <input type="text" id="a2" ><br>
+Location:    <select name="city">
+    <option>Dhaka</option>
+    <option>Others</option>
+</select>
+<br>
+Type of apple:
+<input type="checkbox" name="quantity" value="p"> p
+<input type="checkbox" name="quantity" value="q"> q
+<input type="checkbox" name="quantity" value="r"> r
+<br>
+<input type="submit" id="btn"  value="Calculate Bill" onclick="cost()">
+
+<label id="sum" style="color: red;"></label>
+<label id="type" style="color: red;"></label>
+
+   <script src="p.js"></script>
+</body>
+</html>

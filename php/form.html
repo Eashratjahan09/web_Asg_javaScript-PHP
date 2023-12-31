@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.php" method="post">
+        Enter the num of apple:<input type="text" name="a1" ><br>
+        Home Delivery:<input type="radio"  name="r" value="yes">yes
+                     <input type="radio" name="r" value="No">No<br>
+        Tip:         <input type="text" name="a2" ><br>
+        Location:    <select name="city">
+            <option>Dhaka</option>
+            <option>Others</option>
+        </select>
+        <br>
+        Type of apple:
+        <input type="checkbox" name="quantity1" value="p"> p
+        <input type="checkbox" name="quantity2" value="q"> q
+        <input type="checkbox" name="quantity3" value="r"> r
+        <br>
+        <input type="submit" id="btn"  value="Calculate Bill">
+    </form>
+</body>
+</html>
